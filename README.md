@@ -1,7 +1,7 @@
 # Purple Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
-now updated Version 15.2.8 by Abdul Kader Foysal
+now updated Version 16.0.3 by Abdul Kader Foysal
 
 <h1>Demo</h1>
 
