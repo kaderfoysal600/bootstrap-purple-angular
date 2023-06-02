@@ -1,7 +1,5 @@
 <div class="page-header">
-  <h3 class="page-title">
-    ChartJs
-  </h3>
+  <h3 class="page-title">ChartJs</h3>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="javascript:;">Charts</a></li>
@@ -14,7 +12,7 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">Line chart</h4>
-        <canvas baseChart [chartType]="'line'" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"></canvas>
+        <canvas id="MyChart">{{ lineChart }}</canvas>
       </div>
     </div>
   </div>
@@ -22,7 +20,7 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">Bar chart</h4>
-        <canvas baseChart [chartType]="'bar'" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [colors]="barChartColors"></canvas>
+        <canvas id="MyChart2">{{ barChart }}</canvas>
       </div>
     </div>
   </div>
@@ -32,7 +30,8 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">Area chart</h4>
-        <canvas baseChart [chartType]="'line'" [datasets]="areaChartData" [labels]="areaChartLabels" [options]="areaChartOptions" [colors]="areaChartColors"></canvas>
+
+        <canvas id="MyChart4">{{ areaChart }}</canvas>
       </div>
     </div>
   </div>
@@ -40,7 +39,7 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">Doughnut chart</h4>
-        <canvas baseChart [chartType]="'doughnut'" [datasets]="doughnutPieChartData" [labels]="doughnutPieChartLabels" [options]="doughnutPieChartOptions" [colors]="doughnutPieChartColors"></canvas>
+        <canvas id="MyChart3">{{ doughnut }}</canvas>
       </div>
     </div>
   </div>
@@ -50,7 +49,7 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">Pie chart</h4>
-        <canvas baseChart [chartType]="'pie'" [datasets]="doughnutPieChartData" [labels]="doughnutPieChartLabels" [options]="doughnutPieChartOptions" [colors]="doughnutPieChartColors"></canvas>
+        <canvas id="MyChart5">{{ pieChart }}</canvas>
       </div>
     </div>
   </div>
@@ -58,7 +57,7 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">Scatter chart</h4>
-        <canvas baseChart [chartType]="'scatter'" [datasets]="scatterChartData" [options]="scatterChartOptions" [colors]="scatterChartColors"></canvas>
+        <canvas id="MyChart6">{{ scatterChart }}</canvas>
       </div>
     </div>
   </div>

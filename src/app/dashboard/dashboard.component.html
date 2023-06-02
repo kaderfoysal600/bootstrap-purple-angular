@@ -96,7 +96,7 @@
       <div class="card-body">
         <div class="d-flex flex-wrap justify-content-between">
           <h4 class="card-title">Visit And Sales Statistics</h4>
-          <div
+          <!-- <div
             id="visit-sale-chart-legend"
             class="rounded-legend legend-horizontal"
           >
@@ -105,17 +105,9 @@
               <li><span class="legend-dots"></span>USA</li>
               <li class="mr-0"><span class="legend-dots"></span>UK</li>
             </ul>
-          </div>
+          </div> -->
         </div>
-        <canvas
-          baseChart
-          #visitSaleChart
-          [chartType]="'bar'"
-          [datasets]="visitSaleChartData"
-          [labels]="visitSaleChartLabels"
-          [options]="visitSaleChartOptions"
-          [colors]="visitSaleChartColors"
-        ></canvas>
+        <canvas id="BarChart">{{ barChart }}</canvas>
       </div>
     </div>
   </div>
@@ -123,15 +115,8 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">Traffic Sources</h4>
-        <canvas
-          baseChart
-          [chartType]="'doughnut'"
-          [datasets]="trafficChartData"
-          [labels]="trafficChartLabels"
-          [options]="trafficChartOptions"
-          [colors]="trafficChartColors"
-        ></canvas>
-        <div
+        <canvas id="DoughnutChart">{{ doughnut }}</canvas>
+        <!-- <div
           id="traffic-chart-legend"
           class="rounded-legend legend-vertical legend-bottom-left pt-4"
         >
@@ -149,7 +134,7 @@
               <span class="float-right">40%</span>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
