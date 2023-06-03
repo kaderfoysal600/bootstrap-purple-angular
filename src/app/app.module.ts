@@ -1,8 +1,9 @@
+import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+// import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./shared/navbar/navbar.component";
@@ -14,7 +15,6 @@ import { TodoComponent } from "./apps/todo-list/todo/todo.component";
 import { SpinnerComponent } from "./shared/spinner/spinner.component";
 import { ContentAnimateDirective } from "./shared/directives/content-animate.directive";
 import { TodoListComponent } from "./apps/todo-list/todo-list.component";
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,8 @@ import { TodoListComponent } from "./apps/todo-list/todo-list.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    CommonModule,
+    // NgbModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,

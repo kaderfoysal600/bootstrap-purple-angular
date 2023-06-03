@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-modals',
@@ -8,21 +8,23 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalsComponent implements OnInit {
 
-  constructor(private modalService: NgbModal) {}
+  constructor(
+    // private modalService: NgbModal
+    ) {}
 
   ngOnInit() {
   }
 
   openModal( exampleModalContent ) {
-    this.modalService.open( exampleModalContent, { size : 'lg' } );
+    // this.modalService.open( exampleModalContent, { size : 'lg' } );
   }
 
   openMediumModal( mediumModalContent ) {
-    this.modalService.open( mediumModalContent );
+    // this.modalService.open( mediumModalContent );
   }
 
   openSmallModal( smallModalContent ) {
-    this.modalService.open( smallModalContent, { size : 'sm' } );
+    // this.modalService.open( smallModalContent, { size : 'sm' } );
   }
 
 }

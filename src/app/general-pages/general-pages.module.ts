@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlankPageComponent } from './blank-page/blank-page.component';
 import { Routes, RouterModule } from '@angular/router';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes : Routes = [
   { path: 'blank-page', component: BlankPageComponent }
@@ -13,7 +13,7 @@ const routes : Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    NgbModule
+    // NgbModule
   ]
 })
 export class GeneralPagesModule { }
