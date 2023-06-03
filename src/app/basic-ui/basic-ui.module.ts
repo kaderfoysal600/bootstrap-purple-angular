@@ -16,7 +16,6 @@ import { TabsComponent } from "./tabs/tabs.component";
 import { TooltipsComponent } from "./tooltips/tooltips.component";
 import { TypographyComponent } from "./typography/typography.component";
 import { NotificationsComponent } from "./notifications/notifications.component";
-import { MatExpansionModule } from "@angular/material/expansion";
 
 const routes: Routes = [
   { path: "accordions", component: AccordionsComponent },
@@ -51,7 +50,6 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    MatExpansionModule,
     // NgbModule,
     RouterModule.forChild(routes),
   ],
