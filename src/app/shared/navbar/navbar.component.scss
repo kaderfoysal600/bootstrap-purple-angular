@@ -7,31 +7,31 @@
 .navbar {
   font-family: $type1-light;
   background: $navbar-bg;
-  transition: background $action-transition-duration
-    $action-transition-timing-function;
-  -webkit-transition: background $action-transition-duration
-    $action-transition-timing-function;
-  -moz-transition: background $action-transition-duration
-    $action-transition-timing-function;
-  -ms-transition: background $action-transition-duration
-    $action-transition-timing-function;
+  // transition: background $action-transition-duration
+  //   $action-transition-timing-function;
+  // -webkit-transition: background $action-transition-duration
+  //   $action-transition-timing-function;
+  // -moz-transition: background $action-transition-duration
+  //   $action-transition-timing-function;
+  // -ms-transition: background $action-transition-duration
+  //   $action-transition-timing-function;
 
   .navbar-brand {
     width: 110px;
   }
   .navbar-brand-wrapper {
-    transition: width $action-transition-duration
-        $action-transition-timing-function,
-      background $action-transition-duration $action-transition-timing-function;
-    -webkit-transition: width $action-transition-duration
-        $action-transition-timing-function,
-      background $action-transition-duration $action-transition-timing-function;
-    -moz-transition: width $action-transition-duration
-        $action-transition-timing-function,
-      background $action-transition-duration $action-transition-timing-function;
-    -ms-transition: width $action-transition-duration
-        $action-transition-timing-function,
-      background $action-transition-duration $action-transition-timing-function;
+    // transition: width $action-transition-duration
+    //     $action-transition-timing-function,
+    //   background $action-transition-duration $action-transition-timing-function;
+    // -webkit-transition: width $action-transition-duration
+    //     $action-transition-timing-function,
+    //   background $action-transition-duration $action-transition-timing-function;
+    // -moz-transition: width $action-transition-duration
+    //     $action-transition-timing-function,
+    //   background $action-transition-duration $action-transition-timing-function;
+    // -ms-transition: width $action-transition-duration
+    //     $action-transition-timing-function,
+    //   background $action-transition-duration $action-transition-timing-function;
     background: $navbar-bg;
     width: $sidebar-width-lg;
     height: $navbar-height;
@@ -72,14 +72,14 @@
     }
   }
   .navbar-menu-wrapper {
-    transition: width $action-transition-duration
-      $action-transition-timing-function;
-    -webkit-transition: width $action-transition-duration
-      $action-transition-timing-function;
-    -moz-transition: width $action-transition-duration
-      $action-transition-timing-function;
-    -ms-transition: width $action-transition-duration
-      $action-transition-timing-function;
+    // transition: width $action-transition-duration
+    //   $action-transition-timing-function;
+    // -webkit-transition: width $action-transition-duration
+    //   $action-transition-timing-function;
+    // -moz-transition: width $action-transition-duration
+    //   $action-transition-timing-function;
+    // -ms-transition: width $action-transition-duration
+    //   $action-transition-timing-function;
     color: $navbar-menu-color;
     padding-left: 24px;
     padding-right: 24px;
@@ -95,7 +95,7 @@
       border: 0;
       color: inherit;
       height: $navbar-height;
-      @include border-radius(0px);
+      border-radius: 0px;
       padding-left: 5px;
       padding-right: 20px;
       &:not(.navbar-toggler-right) {
@@ -118,7 +118,7 @@
         input {
           font-size: $default-font-size;
           padding: 0.5rem;
-          @include input-placeholder {
+          input-placeholder {
             font-size: $navbar-font-size;
             color: $navbar-menu-color;
             font-family: $type1-light;
@@ -177,8 +177,8 @@
           margin-left: 1.5rem;
           margin-right: 1.5rem;
           height: $navbar-height;
-          @include display-flex;
-          @include align-items(center);
+          display: flex;
+          align-items: center;
           cursor: pointer;
           @media (max-width: 767px) {
             margin-left: 0.8rem;
@@ -198,7 +198,7 @@
           .dropdown-menu {
             @extend .dropdownAnimation;
             border: none;
-            @include border-radius(5px);
+            border-radius: 5px;
             -webkit-box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
             -moz-box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
@@ -372,7 +372,7 @@
         .search-field {
           .input-group {
             input {
-              @include input-placeholder {
+              input-placeholder {
                 color: $white;
               }
             }

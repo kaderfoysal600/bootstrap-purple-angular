@@ -2,11 +2,11 @@
 
 .preview-list {
   .preview-item {
-    @include display-flex;
-    @include flex-direction(row);
-    @include align-items(flex-start);
-    padding: .75rem 1.5rem;
-    font-size: .875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
     &:last-child {
       border-bottom: 0;
     }
@@ -29,9 +29,10 @@
       .preview-icon {
         padding: 6px;
         text-align: center;
-        @include display-flex;
-        @include align-items(center);
-        @include justify-content(center);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: center;
         i {
           font-size: 1.125rem;
           margin: 0;
@@ -70,7 +71,7 @@
       p {
         margin-bottom: 10px;
         .content-category {
-          font-family: 'source-sans-pro-semibold', sans-serif;
+          font-family: "source-sans-pro-semibold", sans-serif;
           padding-right: 15px;
           border-right: 1px solid $border-color;
           @extend .text-muted;
@@ -84,8 +85,8 @@
       }
     }
     .preview-actions {
-      @include display-flex;
-      @include flex-direction(row);
+      display: flex;
+
       i {
         width: 29px;
         color: color(gray-lightest);
@@ -102,7 +103,7 @@
   }
   &.comment-preview {
     .preview-item {
-      padding: .87rem 0;
+      padding: 0.87rem 0;
       &:first-child {
         padding-top: 0;
       }

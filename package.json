@@ -23,7 +23,6 @@
     "@mdi/font": "^5.7.55",
     "bootstrap": "^4.6.2",
     "chart.js": "^4.3.0",
-    "compass-mixins": "^0.12.10",
     "jquery": "^3.5.1",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.3",

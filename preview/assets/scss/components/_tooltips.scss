@@ -34,7 +34,7 @@
 
 @each $color, $value in $theme-colors {
 	.tooltip-#{$color} {
-	  @include tooltip-variant($color);
+	//   @include tooltip-variant($color);
 	}
 }
   
